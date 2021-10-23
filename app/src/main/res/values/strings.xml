@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ProAndMwstRechner</string>
+    <string name="hello">Hello World!</string>
+
+    <string name="pNetto">Netto</string>
+    <string name="pBrutto">Brutto</string>
+
+    <string name="pBerechnen">Berechnen</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context = ".ActMain">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello Welt!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <EditText
+            android:id = "@+id/txtBetrag"
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "10dp"
+            android:inputType = "numberDecimal"
+            />
+
+        <RadioGroup android:id="@+id/rbgBruttoNetto"
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:orientation = "vertical">
+            <RadioButton android:id = "@+id/radNetto"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "@string/pNetto"
+                android:checked = "true"/>
+
+            <RadioButton android:id = "@+id/radBrutto"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "@string/pBrutto"
+                android:checked = "false"/>
+                />
+        </RadioGroup>
+
+        <Spinner android:id = "@+id/spiMwstSatz"
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:drawSelectorOnTop = "true"
+            android:entries = "@array/mwstAnzeige"
+            android:entryValues = "@array/mwstWerte"
+            />
+
+
+        <Button
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:text = "@string/pBerechnen"
+            android:onClick = "onClickBerechnen"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

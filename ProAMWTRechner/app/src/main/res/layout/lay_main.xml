@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".ActMain"
+    tools:ignore="ExtraText">
+
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:text="@string/bruttonetto"/>
+
+    <EditText android:id="@+id/txtBetrag"
+
+        android:layout_width ="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="numberDecimal"/>
+
+    <RadioGroup android:id="@+id/rbgBruttoNetto"
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:orientation = "vertical">
+
+        <RadioButton android:id = "@+id/radNetto"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+             android:text = "@string/pNetto"
+            android:checked = "true"/>
+
+        <RadioButton android:id = "@+id/radBrutto"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "@string/pBrutto"
+            android:checked = "false"/>
+
+        </RadioGroup>
+
+    <Spinner android:id = "@+id/spiMwstSatz"
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:drawSelectorOnTop = "true"
+        android:entries = "@array/mwstAnzeige"
+        android:entryValues = "@array/mwstWerte"
+        />
+    <Button
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:text = "@string/pBerechnen"
+        android:onClick = "onClickBerechnen"
+        />
+    </LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ProAndHalloWelt</string>
+    <string name="pHallo">Ich komme aus der Strings.xml Datei</string>
+</resources>

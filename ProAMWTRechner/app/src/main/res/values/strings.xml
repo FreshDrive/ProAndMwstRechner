@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProAMWTRechner</string>
+    <string name ="hello">Buenos Dias</string>
+    <string name ="bruttonetto">Geben sie bitte den Brutto- oder Nettobetrag ein.</string>
+    <string name ="pBrutto">Brutto</string>
+    <string name ="pNetto">Netto.</string>
+    <string name ="pBerechnen">Berechnen.</string>
+    <string name ="pErgebnisHeader">Ergebnis</string>
+    <string name ="pMwSt">MwSt</string>
+</resources>
